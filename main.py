@@ -21,7 +21,7 @@ from hangman_art import logo
 print(logo)
 
 
-#Create blanks
+# Create blanks
 display = []
 for _ in range(word_length):
     display += "_"
@@ -33,7 +33,7 @@ while not end_of_game:
     if guess in display:
         print(f"You've already guessed {guess}")
 
-    #Check guessed letter
+    # Check guessed letter
     for position in range(word_length):
         letter = chosen_word[position]
         # print(f"Current position: {position}\n Current letter: {letter}\n Guessed letter: {guess}")
